@@ -1,0 +1,45 @@
+Continuous Integration:
+CI is a software development practice where developers regularly merge their code changes into a shared repository, usually multiple times a day. Each merge triggers an automated process to build and test the code, ensuring that new changes inregrate smoothly with the existing codebase.
+
+Why it is needed?
+- Early detection of errors: By inregrating regularly, developers can detect and fix integration issues early, preventing them from escalating larger problems.
+- Automation of testing: CI automates the testing proces, ensuring that code quality remains high and that any bug caught early.
+- Faster development cycles: CI allows for faster iterations by providing quick feedback to developers, leading to more agile and efficent developement process.
+- Reduced Integration problems: Regular integration reduces the complexity and time spent on integrating code at later stages.
+
+How CI works:
+-> Version Control System (VCS): Developers commit their code to a shared repository (e.g, GitHub, GitLab)
+-> CI Server: A CI server (e.g GitHub Actions, Jenkins) monitors the repository. When changes are detected, the CI server automatically triggers a series of tasks.
+-> Build Automation: The code is built, which includes compiling the code and generating artifacts.
+-> Automated testing:
+    - Unit tests: These tests check individual components or functions to ensure they work as expected.
+    - Integration tests: These tests verify that different parts of the code are working together as intended.
+    - End-to-End tests: These tests simulate real world scenarios to ensure the system as a whole behaves correctly.
+-> Feedback: The results of the build and tests are reported back to developers, usually in the form of success or failure notifications.
+
+Benefits of CI:
+- Improved code quality
+- Faster develivery
+- Collaboration
+- Reduced risk
+
+CI Workflow with GitHub Actions:
+-> Triggering CI: CI can be triggered with various events, such as code push, pull request, or even on a schedule.
+-> Configuration files: CI is configured using YAML files(e.g '.github/workflows/ci.yaml'), that defines the tasks to be performed.
+-> Steps in CI Pipeline:
+    - Checkout code: The first step is to checkout the code from the repository.
+    - Set up environment: Install dependencies, set up the runtime environment.
+    - Run tests: Execute the tests defined for the project.
+    - Build artifacts: If the tests pass, build the necessary artifacts for deployment.
+    - Deploy: Optionally, deploy the code to a staging or production environment.
+
+List of useful CI tests:
+1. Unit tests
+2. Integration tests
+3. End-to-End tests (E2E)
+4. Static code analysis
+5. Security tests
+6. Performance tests
+7. Smoke tests
+8. Regression tests
+9. Cross-Browswe/Platform tests
